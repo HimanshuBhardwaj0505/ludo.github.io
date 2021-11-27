@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3b9e7f;
+}
+
+#splash {
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transition: 1s ease-in-out;
+}
+
+#loader {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 15px 15px;
+    grid-template-rows: 15px 15px;
+    grid-gap: 3px;
+    transition: 1s ease-in-out;
+}
+
+.box-one {
+    background-color: #c1beff;
+    animation: bling 2s infinite ease-in-out;
+}
+
+@keyframes bling {
+    from {
+        background-color: #c1beff;
+    }
+    to {
+        background-color: #675fff;
+    }
+}
+
+.box-two {
+    background-color: #6CFC94;
+    animation: bling-two 3s infinite ease-in-out;
+}
+
+@keyframes bling-two {
+    from {
+        background-color: #6CFC94;
+    }
+    to {
+        background-color: #249945;
+    }
+}
+
+.box-three {
+    background-color: #FF8787;
+    animation: bling-three 2s infinite ease-in-out;
+}
+
+@keyframes bling-three {
+    from {
+        background-color: #FF8787;
+    }
+    to {
+        background-color: #df3e3e;
+    }
+}
+
+.box-four {
+    background-color: #EAE07A;
+    animation: bling-four 3s infinite ease-in-out;
+}
+
+@keyframes bling-four {
+    from {
+        background-color: #EAE07A;
+    }
+    to {
+        background-color: #aa9f24;
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transition: 1s ease-in-out;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.507);
+    height: 250px;
+    border-radius: 13px;
+    display: grid;
+    grid-template-rows: 60px 170px;
+}
+
+.header {
+    border-bottom: 2px solid whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-logo {
+    margin-left: 10px;
+}
+
+.text {
+    margin-right: 10px;
+    color: white;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    width: 220px;
+    height: 35px;
+    border-radius: 0 !important;
+    border: none;
+    text-indent: 10px;
+    outline: none;
+}
+
+::placeholder {
+    color: darkcyan;
+    font-size: 12px;
+    letter-spacing: 1px;
+    font-family: cursive;
+}
+
+button {
+    width: 100px;
+    height: 35px;
+    border-radius: 0 !important;
+    border: none;
+    outline: none;
+}
+
+.mute {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 13px;
+    margin-right: 55px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
